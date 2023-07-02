@@ -1,7 +1,7 @@
-import { Address } from "../../domain/entity/address";
-import { Customer } from "../../domain/entity/customer";
-import { CustomerRepositoryInterface } from "../../domain/repository/customerRepositoryInterface";
-import { CustomerModel } from "../db/sequelize/model/customerModel";
+import { Address } from "../../../../domain/customer/value-object/address";
+import { Customer } from "../../../../domain/customer/entity/customer";
+import { CustomerRepositoryInterface } from "../../../../domain/customer/repository/customerRepositoryInterface";
+import { CustomerModel } from "./customerModel";
 
 export class CustomerRepository implements CustomerRepositoryInterface {
     async update(entity: Customer): Promise<void> {
