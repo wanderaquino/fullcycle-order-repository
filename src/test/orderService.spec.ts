@@ -1,7 +1,7 @@
-import { Customer } from "../domain/entity/customer";
-import { Order } from "../domain/entity/order";
-import { OrderItem } from "../domain/entity/orderItem"
-import { OrderService } from "../domain/service/orderService";
+import { Customer } from "../domain/customer/entity/customer";
+import { Order } from "../domain/checkout/entity/order";
+import { OrderItem } from "../domain/checkout/entity/orderItem";
+import { OrderService } from "../domain/checkout/service/orderService";
 import {v4 as uuid} from "uuid";
 
 

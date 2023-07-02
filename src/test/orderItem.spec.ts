@@ -1,4 +1,4 @@
-import { OrderItem } from "../domain/entity/orderItem";
+import { OrderItem } from "../domain/checkout/entity/orderItem"
 
 describe("OrderItem Unit Tests", () => {
     it("should return error if the qty less than one ", () => {

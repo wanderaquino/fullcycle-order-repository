@@ -1,4 +1,4 @@
-import { Address } from "../domain/entity/address"
+import { Address } from "../domain/customer/value-object/address"
 
 describe("Address unit tests", () => {
     it("should create and andress", () => {

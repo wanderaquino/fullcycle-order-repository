@@ -1,12 +1,12 @@
 import {v4 as uuid} from "uuid";
-import { Customer } from "../domain/entity/customer";
-import { EventDispatcher } from "../domain/event/@shared/eventDispatcher";
-import { EnviaConsoleLog1Handler } from "../domain/event/customer/handler/enviaConsoleLog1Handler";
-import { EnviaConsoleLog2Handler } from "../domain/event/customer/handler/enviaConsoleLog2Handler";
-import { Address } from "../domain/entity/address";
-import { EnviaAddressConsoleLogHandler } from "../domain/event/customer/handler/enviaConsoleLogHandler";
-import { CustomerCreatedEvent } from "../domain/event/customer/customerCreatedEvent";
-import { AddressChangedEvent } from "../domain/event/customer/addressChangedEvent";
+import { Customer } from "../domain/customer/entity/customer";
+import { EventDispatcher } from "../domain/@shared/event/eventDispatcher";
+import { EnviaConsoleLog1Handler } from "../domain/customer/event/handler/enviaConsoleLog1Handler";
+import { EnviaConsoleLog2Handler } from "../domain/customer/event/handler/enviaConsoleLog2Handler";
+import { Address } from "../domain/customer/value-object/address";
+import { EnviaAddressConsoleLogHandler } from "../domain/customer/event/handler/enviaConsoleLogHandler";
+import { CustomerCreatedEvent } from "../domain/customer/event/customerCreatedEvent";
+import { AddressChangedEvent } from "../domain/customer/event/addressChangedEvent";
 
 
 describe("Customer Event dispatcher tests", () => {

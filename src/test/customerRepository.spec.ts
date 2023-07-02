@@ -1,9 +1,9 @@
 import { v4 as uuid  } from "uuid";
 import { Sequelize } from "sequelize-typescript"
-import { Customer } from "../domain/entity/customer";
-import { CustomerModel } from "../infrastructure/db/sequelize/model/customerModel";
-import { CustomerRepository } from "../infrastructure/repository/customerRepository";
-import { Address } from "../domain/entity/address";
+import { Customer } from "../domain/customer/entity/customer";
+import { CustomerModel } from "../infrastructure/customer/repository/sequelize/customerModel";
+import { CustomerRepository } from "../infrastructure/customer/repository/sequelize/customerRepository";
+import { Address } from "../domain/customer/value-object/address";
 
 describe("CustomerRepository unit tests", () => {
 

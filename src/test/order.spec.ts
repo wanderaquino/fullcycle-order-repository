@@ -1,4 +1,4 @@
-import { Order } from "../domain/entity/order";
+import { Order } from "../domain/checkout/entity/order";
 
 describe("Order unit Tests", () => {
     it("should throw error when id is empty", () => {
