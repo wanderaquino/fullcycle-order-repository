@@ -1,5 +1,5 @@
-import { EventHandlerInterface } from "../../@shared/eventHandlerInterface";
-import { EventInterface } from "../../@shared/eventInterface";
+import { EventHandlerInterface } from "../../../@shared/event/eventHandlerInterface";
+import { EventInterface } from "../../../@shared/event/eventInterface";
 import { CustomerCreatedEvent } from "../customerCreatedEvent";
 
 export class EnviaConsoleLog1Handler implements EventHandlerInterface <CustomerCreatedEvent> {
